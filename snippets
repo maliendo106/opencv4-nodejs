@@ -1,0 +1,8 @@
+rm -rf node_modules package-lock.json
+npm cache clean -f
+export OPENCV4NODEJS_DISABLE_AUTOBUILD=1
+export OPENCV_INCLUDE_DIR=/usr/local/include/opencv4/opencv2
+export OPENCV_LIB_DIR=/usr/local/lib
+npm install opencv4nodejs
+npm i @u4/opencv4nodejs
+npm install opencv-build
